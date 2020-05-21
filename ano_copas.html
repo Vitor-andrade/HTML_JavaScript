@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoCopa = 1930;
+	var limite = parseInt(prompt("Entre com a data limite"));
+
+
+	while (anoCopa <= limite){
+
+		mostra("Teve copa em: " + anoCopa);
+		anoCopa = anoCopa + 4;
+	}
+
+	var proximaCopaAnos = anoCopa - limite;
+	var dataProximaCopa = limite + proximaCopaAnos;
+
+	
+	mostra("A próxima copa será em: " + Math.abs(proximaCopaAnos) + " anos.");
+
+	mostra("A próxima copa será no ano de: " + Math.abs(dataProximaCopa));
+	
+    
+</script>
